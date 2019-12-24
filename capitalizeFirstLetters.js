@@ -12,7 +12,7 @@ describe('capitalizeFirst', () => {
     assert.strictEqual(capitalizeFirst('javaScript'), 'JavaScript');
   });
   it('works for a 1-character string', () => {
-    assert.strictEqual(capitalizeFirst('z'), 'Z');
+    assert.strictEqual(capitalizeFirst('a'), 'A');
   });
   it('works for an empty string', () => {
     assert.strictEqual(capitalizeFirst(''), '');
