@@ -1,5 +1,5 @@
 
-// capitalizeFirst.test.js
+// capitalizeFirst.string.js
 const assert = require('assert');
 const capitalizeFirst = require('../capitalizeFirst');
 
@@ -18,3 +18,15 @@ describe('capitalizeFirst', () => {
     assert.strictEqual(capitalizeFirst(''), '');
   });
 });
+
+function capitalizeFirstLetters(string) {
+  if (string.length > 0) {
+    string = string.split(" ");
+    for (let i = 0; i < string.length; i++) {
+      string[i] = string[i][0].toUpperCase()+string[i].substr(1);
+    }
+    return string.join(' ');
+  } else {
+    return '';
+  }
+} 
